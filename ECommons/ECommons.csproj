@@ -11,7 +11,6 @@
 
     <PropertyGroup>
         <TargetFramework>net10.0-windows7.0</TargetFramework>
-        <Platforms>x64</Platforms>
         <LangVersion>preview</LangVersion>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
@@ -32,7 +31,7 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <DalamudLibPath>$(appdata)\xivlauncher\Addon\Hooks\dev\</DalamudLibPath>
+        <DalamudLibPath>$(DALAMUD_HOME)</DalamudLibPath>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Linux)))'">
